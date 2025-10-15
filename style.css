@@ -1,0 +1,86 @@
+body {
+    background: #343432;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Para centralizar o .page verticalmente também, se necessário */
+    justify-content: center; /* Centraliza o .page horizontalmente */
+    align-items: center; /* Centraliza o .page verticalmente (se o body ocupar toda a altura) */
+    min-height: 100vh; /* Garante que o body ocupe pelo menos a altura da tela */
+  }
+  
+  .page {
+    width: 1000px;
+    /* Não precisamos de display flex aqui se o foco é centralizar as sections dentro do main */
+    margin: 0 auto; /* Centraliza o container .page na tela */
+  }
+  
+  h1 {
+    display: flex;
+    justify-content: end;
+    font-size: 23px;
+    letter-spacing: 2px;
+    color: blue;
+  }
+  
+  header {
+    display: flex;
+    justify-content: center;
+    margin-top: 65px;
+    align-items: center;
+    width: 100%;
+  }
+  
+  ul {
+    display: flex;
+    gap: 48px;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  li {
+    list-style: none;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 18px;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  li:hover {
+    color: rgb(188, 188, 197);
+    transition: 0.3s;
+    border-radius: 8px;
+    font-size: 17px;
+  }
+  
+  main {
+    display: flex; /* Alinha os filhos (as sections) lado a lado */
+    justify-content: center; /* Centraliza as sections horizontalmente dentro do main */
+    align-items: center; /* Centraliza as sections verticalmente dentro do main (se necessário) */
+    margin-top: 76px; /* Mantenha a margem superior para espaçamento do header */
+    width: 100%; /* Garante que o main ocupe a largura do .page para o justify-content funcionar corretamente */
+  }
+  
+  section {
+    width: 300px; /* Defina uma largura para as sections */
+    padding: 20px;
+    align-items: justify;
+    margin: 0 20px; /* Adiciona margem nas laterais para separá-las */
+  }
+  
+  section p {
+    color: white;
+    font-size: 20px;
+  }
+  
+  span {
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 60px;
+  }
+  
+  img {
+    width: 250px;
+    border-radius: 50%;
+  }
